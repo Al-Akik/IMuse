@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "iMuse",
+    "slug": "iMuse",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/iMuse-app-icon.jpg",
+    "splash": {
+      "image": "./assets/images/iMuse-logo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/iMuse-app-icon.jpg",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.elie_bsaibes.iMuse"
+    },
+    "web": {
+      "favicon": "./assets/images/iMuse-app-icon.jpg"
+    }
+  }
+}
