@@ -29,13 +29,14 @@ To run the project, follow these steps:
 
 1. **Install Expo CLI**: First, install Expo CLI globally on your system. Open the terminal and execute the following command:
 
+```
 npm install -g expo-cli@4.4.8
-
+```
 
 2. **Ensure Node.js Version**: Ensure that you have Node.js version 16 installed on your system. You can check the Node.js version by running the command:
-
+```
 node -v
-
+```
 
 If you don't have Node.js version 16, you can install it manually or use a version manager like nvm.
 
@@ -45,10 +46,9 @@ cd /path/to/project
 
 
 4. **Start the Project**: Once inside the project directory, start the project using Expo CLI. Run the following command:
-
+```
 expo start
-
-
+```
 This will start the Expo development server and display a QR code in your terminal.
 
 5. **Run the Project on Device or Simulator**: To run the project on your device or simulator, you have a few options:
