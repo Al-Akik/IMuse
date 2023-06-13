@@ -1,6 +1,6 @@
 # iMuse
 
-iMuse is an artists social media platform that will make it easy for artists to connect, collaborate, and share ideas.
+iMuse is a unique, music-focused social media application developed with React Native and Node.js. The platform containes most functionalities seen in apps like Instagram, offering an engaging and interactive user experience. Key features include a built-in chat system and a  recommendation algorithm developed from scratch. 
 
 ## Setting up Firebase Credentials
 
