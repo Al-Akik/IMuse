@@ -35,33 +35,6 @@ export default function Landing({ navigation }) {
 
   return (
     <View style={styles.screencontainer}>
-      <View style={{ marginTop: 50, width, height }}>
-        <View style={styles.circleDiv}>
-          {images.map((image, i) => (
-            <View key={image} style={styles.whiteCircleup} />
-          ))}
-        </View>
-        <ScrollView
-          showsHorizontalScrollIndicator={false}
-          pagingEnabled
-          horizontal
-          ref={Ref}
-          style={styles.imageContainer}
-        >
-          {images.map((image, index) => (
-            <Image
-              key={index}
-              source={{ uri: image }}
-              style={{
-                width,
-                height,
-                resizeMode: "contain",
-                alignContent: "center",
-              }}
-            />
-          ))}
-        </ScrollView>
-      </View>
 
       <Text style={styles.buttonLegend}>New to iMuse?</Text>
 
@@ -91,6 +64,8 @@ const styles = StyleSheet.create({
   screencontainer: {
     flex: 1,
     backgroundColor: "white",
+    justifyContent: "center",
+    alignItems: "center",
   },
   imageContainer: {
     width: WIDTH,
@@ -113,16 +88,6 @@ const styles = StyleSheet.create({
     opacity: 0.9,
     color: "white",
     marginBottom: 5,
-  },
-
-  buttonText: {
-    width: "100%",
-    height: "100%",
-    fontSize: 20,
-    fontFamily: "Regular",
-    textAlign: "center",
-    color: "#fff",
-    textAlignVertical: "center",
   },
 
   circleDiv: {
@@ -148,14 +113,15 @@ const styles = StyleSheet.create({
   },
 
   buttonContainer: {
-    width: "67%",
-    height: "6%",
-    marginHorizontal: 60,
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#CE2029",
-    borderRadius: 5,
-    margin: 5,
+    width: '50%',
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#CE2029',
+    borderRadius: 10,
+    marginTop: 5,
+    alignSelf: 'center',
+    display:"flex"
   },
   buttonLegend: {
     width: "100%",
@@ -165,6 +131,20 @@ const styles = StyleSheet.create({
     color: "#102F44",
     padding: 5,
     marginTop: 5,
+
+  },
+
+  buttonText: {
+    width: "100%",
+    height: "100%",
+    fontSize: 20,
+    fontFamily: "Regular",
+    textAlign: "center",
+    color: "#fff",
+    textAlignVertical: "center",
+    justifyContent:"center",
+    alignItems:"center",
+    padding:5,
   },
 });
 
