@@ -13,15 +13,15 @@ import thunk from "redux-thunk";
 const store = createStore(rootReducer, applyMiddleware(thunk));
 import firebase from "firebase";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey://REPLACE WITH API KEY,
-  authDomain: //REPLACE WITH AUTH DOMAIN,
-  projectId: //REPLACE WITH PROJECT ID,
-  storageBucket: //REPLACE WITH STORAGE BUCKET,
-  messagingSenderId: //REPLACE WITH MESSAGE SENDER ID,
-  appId:// REPLACE WITH APP ID,
-  measurementId:// REPLACE WITH MEASUREMENT ID,
-};
+  const firebaseConfig = {
+    apiKey: "AIzaSyARVEDchLBdiNsS4i5qfPnJuM1nXX74vkw",
+    authDomain: "imuse-1f258.firebaseapp.com",
+    projectId: "imuse-1f258",
+    storageBucket: "imuse-1f258.appspot.com",
+    messagingSenderId: "345904509372",
+    appId: "1:345904509372:web:6e4ca6f4d7dad8c24f7bb9",
+    measurementId: "G-D6DTMD3VPS"
+  };
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
